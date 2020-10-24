@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
+import br.com.bichobemcuidado.model.ConsultaDoAnimal;
 import br.com.bichobemcuidado.model.DonoDoAnimal;
 
 public class Principal {
@@ -28,5 +29,15 @@ public class Principal {
 		System.out.println("Número da residência:");
 		System.out.println(
 				donoDoAnimal.numeroRua = scan.nextInt());
+		
+		/*Consulta*/
+		ConsultaDoAnimal consulta = new ConsultaDoAnimal();
+		consulta.dataAtendimento = new Date();
+		consulta.diagnostico = "Dor de dente. Será remediado por 30 dias";
+		
+		System.out.println("data da consulta: " + consulta.dataAtendimento);
+		consulta.exibirDiagnostico();
+		
+		
 	}
 }

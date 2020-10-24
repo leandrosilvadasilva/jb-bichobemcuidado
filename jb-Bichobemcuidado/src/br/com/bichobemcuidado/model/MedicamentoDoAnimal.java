@@ -4,6 +4,8 @@ public class MedicamentoDoAnimal {
 	
 	public String nomeRemedio;
 	public String tipoRemedio;
+	public int qtdRemedio;
+	/* FAZER UM ARRAY*/
 	public String getNomeRemedio() {
 		return nomeRemedio;
 	}
@@ -15,6 +17,10 @@ public class MedicamentoDoAnimal {
 	}
 	public void setTipoRemedio(String tipoRemedio) {
 		this.tipoRemedio = tipoRemedio;
+	}
+	
+	public int mostrarTotalRemedios() {
+		return 0;
 	}
 	
 

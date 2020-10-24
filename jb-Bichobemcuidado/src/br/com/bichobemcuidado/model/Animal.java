@@ -1,11 +1,27 @@
 package br.com.bichobemcuidado.model;
 
 public class Animal {
-	public String nome;
-	public String tipo;
-	public String raca;
-	public String cor;
-	public char genero;
+	private String nome;
+	private String tipo;
+	private String raca;
+	private String cor;
+	private GeneroAnimal genero;
+	
+
+	
+
+	public Animal() {
+		super();
+	}
+	public Animal(String nome, String tipo, String raca, String cor, GeneroAnimal genero, double peso) {
+		super();
+		this.nome = nome;
+		this.tipo = tipo;
+		this.raca = raca;
+		this.cor = cor;
+		this.genero = genero;
+		this.peso = peso;
+	}
 	public double peso;
 	public String getNome() {
 		return nome;
@@ -31,12 +47,7 @@ public class Animal {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-	public char getGenero() {
-		return genero;
-	}
-	public void setGenero(char genero) {
-		this.genero = genero;
-	}
+	
 	public double getPeso() {
 		return peso;
 	}
@@ -45,6 +56,22 @@ public class Animal {
 	}
 	
 	
+	public GeneroAnimal getGenero() {
+		return genero;
+	}
+	public void setGenero(GeneroAnimal genero) {
+		this.genero = genero;
+	}
+	@Override
+	public String toString() {
+		
+		return "Nome: " + this.nome + 
+				" \n" + "Tipo: " + this.tipo + 
+				" \n" + "Genero: " + this.genero +
+				" \n" + "Cor: " + this.cor +
+				" \n" + "Peso: " + this.peso +
+				" \n" + "Raça: " + this.raca;
+	}
 	
 
 }
